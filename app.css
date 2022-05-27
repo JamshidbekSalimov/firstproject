@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+/* =============section header============ */
+
+
+/* ==============section content style====== */
+.sectionn{
+    background: rgb(240, 234, 234);
+    position: relative;
+}
+.buy{
+    position: fixed;
+    top: 20px;
+    left: 15px;
+    background: yellow;
+    color: blue;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 0 10px 0 10px;
+    z-index: 210;
+}
+.buy span{
+    position: absolute;
+    color: #fff;
+    background: red;
+    border-radius: 50%;
+    top: -15px;
+    font-size: 25px;
+   padding: 5px 15px;
+}
+.afterr{
+    position: fixed;
+    top: 60px;
+    left: 15px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    background: #ef7998;
+    z-index: 20;
+    transition: 1s;
+    overflow: hidden;
+    overflow-y: scroll;
+
+}
+.afterr h4{
+    text-align: center;
+    color: white;
+}
+.afterShow{
+    transition: 1s;
+    left:-320px;
+    opacity:0;  
+}
+.buy:focus .afterr{
+    opacity: 1;
+}
+/* .buy .afterr{
+    position: absolute;
+    content: "";
+    width: 300px;
+    height: 300px;
+  top: 35px;
+    font-size: 20px;
+    color: black;
+    transform: translateX(-500px);
+    transition: 1s;
+    border: 1px solid green; 
+}
+.buy:focus .afterr{
+    transform: translateX(-100px);
+    background: #fff;
+} */
+.h1span{
+    margin: 60px 0 25px;
+}
+.h1span h1{
+    text-align: center;
+    font-size: 45px;
+}
+.h1span span{
+    font-size: 55px;
+    color: #ef7998;
+}
+
+.buttons button{
+    outline: none;
+    margin: 0 15px;
+    background: transparent;
+    padding: 5px 10px;
+    border: 1px solid black;
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.buttons button:hover{
+    background: black;
+    color: #ef7998;
+}
+.search{
+    margin: 20px 0;
+    text-align: center;
+}
+.search .ss{
+    background: #ef7998;
+    margin-right: -1px;
+    padding: 5px 10px;
+    border-radius: 3px 0 0 3px;
+}
+.search input{
+    width: 60%;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    background: #fff;
+    border: 1px solid gray;
+    border-radius: 0 3px 3px 0;
+}
+
+
+/* ===========imgg========= */
+.box{
+    margin: 20px;
+    background: #fff;
+}
+.box .img1{
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+.savat{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.img1 img{
+margin: 0;
+padding: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: all 2s ease;
+-webkit-transition: all 2s ease;
+-moz-transition: all 2s ease;
+-ms-transition: all 2s ease;
+-o-transition: all 2s ease;
+
+}
+.price{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 10px;
+}
+.price h4{
+    line-height: 30px;
+}
+
+.gold{
+    font-size: 30px;
+    background-color: gold;
+    color: black;
+    border-radius: 15px 0 0 0;
+    padding: 6px;
+    -webkit-border-radius: 15px 0 0 0;
+    -moz-border-radius: 15px 0 0 0;
+    -ms-border-radius: 15px 0 0 0;
+    -o-border-radius: 15px 0 0 0;
+    transition: all 2s ease;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease;
+}
+.box .img1:hover{
+ overflow: hidden;
+}
+.box .img1{
+ overflow: hidden;
+
+}
+.box:hover .img1 img{
+    transform: scale(1.2) ;
+    -webkit-transform: scale(1.2) ;
+    -moz-transform: scale(1.2) ;
+    -ms-transform: scale(1.2) ;
+    -o-transform: scale(1.2) ;
+   
+}
+.box .img1 .savat .fa{
+    opacity: 0;
+}
+.box:hover .img1 .savat .fa{
+    transform: scale(1.2) translate(-5px,-5px);
+    -webkit-transform: scale(1.2) translate(-5px,-5px);
+    -moz-transform: scale(1.2) translate(-5px,-5px);
+    -ms-transform: scale(1.2) translate(-5px,-5px);
+    -o-transform: scale(1.2) translate(-5px,-5px);
+    opacity: 1;
+}

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./fonts/font-awesome.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,400;0,500;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./app.css">
+
+  <title>Simpl page</title>
+</head>
+
+<body>
+<!-- ====Section header====== -->
+
+
+<!-- Section  contents -->
+<section class="sectionn">
+  <button type="button" class="buy" onclick="functionBuy()">Buy<span id="inc">0</span></button>
+  <div class="conainer">
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-3 afterr" id="afterDiv">
+        <div class="row d-flex justify-content-between">
+              <div class="col-lg-6">
+                <h4>Name</h4>
+              </div>
+              <div class="col-lg-6">
+                <h4>Price</h4>
+              </div>
+        </div>
+
+      </div>
+          
+       
+    </div>
+  </div>
+  <div class="containe">
+    <div class="row flex-column d-flex align-items-center">
+      <div class="col-lg-3">
+        <div class="h1span">
+          <h1>Our<span>Store</span></h1>
+        </div>
+      </div>
+      <div class="col-lg-10 navs">
+        <div class="d-flex justify-content-center">
+         <div class="buttons">
+          <button type="button" onclick="Cakes(event,'all')">All</button>
+          <button type="button" onclick="Cakes(event, 'cakes')">Cakes</button>
+          <button type="button" onclick="Cakes(event, 'cupcakes')">CUPCAKES</button>
+          <button type="button" onclick="Cakes(event, 'sweets')">SWEETS</button>
+          <button type="button" onclick="Cakes(event, 'doughnuts')">DOUGHNUTS</button>
+         </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mx-auto d-flex justify-content-center align-items-center">
+      <div class="col-lg-7">
+       <div class="search d-flex justify-content-center">
+         <div class="ss">
+          <span><i class="fa fa-search"></i></span>
+         </div>
+         <input type="text" placeholder="item...">
+       </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div id="content" class="row flex-wrap justify-content-center align-items-center"></div>
+  <!-- otadiv kelib shu joyga joylashadi==== -->
+  </div>
+</section>
+
+
+
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="./app.js"></script>
+  <script src="./js/jquarry.min.js"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
